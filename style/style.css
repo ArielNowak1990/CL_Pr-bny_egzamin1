@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --main-color: rgb(1, 36, 186);
+    --accent-color: rgb(9, 216, 98);
+    --text-color: rgb(53, 53, 53);
+}
+
+video,
+img,
+canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+nav {
+    width: 1100px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    padding-left: 40px;
+}
+
+main {
+    display: block;
+    width: 1100px;
+    height: calc(100vh - 100px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.into {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.into_info {
+    margin-right: 100px;
+}
+
+.into h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.into h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 105px;
+}
+
+.boxes {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box:nth-of-type(2) {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box {
+    width: 156px;
+    position: relative;
+}
+
+.intro_form {
+    background-color: white;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .13);
+}
+
+.intro_form h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.intro_form input {
+    width: calc(100% - 30px);
+    border: 0px;
+    border-bottom: 1px solid black;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    color: rgba(128, 128, 128, 0.705);
+}
+
+input::placeholder {
+    color: rgba(128, 128, 128, 0.705);
+}
+
+.intro_form button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 20px 30px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 0px;
+    margin-bottom: 30px;
+}
+
+.into_info .boxes .box:nth-of-type(1) p::after {
+    content: "\f0c2";
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Font Awesome 5 Free";
+    color: var(--accent-color);
+    position: absolute;
+    top: -45px;
+    left: 0px;
+}
+
+.into_info .boxes .box:nth-of-type(2) p::after {
+    content: "\f3d1";
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Font Awesome 5 Free";
+    color: var(--accent-color);
+    position: absolute;
+    top: -45px;
+    left: 0px;
+}
+
+.into_info .boxes .box:nth-of-type(3) p::after {
+    content: "\f2f2";
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Font Awesome 5 Free";
+    color: var(--accent-color);
+    position: absolute;
+    top: -45px;
+    left: 0px;
+}
